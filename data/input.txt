@@ -1,0 +1,7 @@
+sed, which stands for stream editor, is probably most commonly used to replace text patterns with a new one, which is exactly what we’ll learn in this lesson.
+
+You'll learn how what flags you pass, the address argument as well as the commands that sed takes. The sed syntax can be summarized like this: sed [flags] '[address]command[options]' [input file]
+
+
+
+

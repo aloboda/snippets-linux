@@ -1,0 +1,42 @@
+= Snippets
+
+`!!` — execute the last command
+
+`open somefile -a "Sublime Text"` — open file in app
+
+
+== Vi
+
+`:conf q` Quit in more comprehensive way
+`~/.vimrc` Vi config
+
+== Rest
+
+=== I/O
+`cat file.json | pbcopy` — copy into clipboard
+
+`tail/head -n 5` — get start/end of file
+`cat file.json | jq` — Format with JQ
+`jq -c . file.json > minimized.json` — Minimize JSON
+
+
+
+`sed -i .bak1 's/USDMXN\/USD/USD\/MXN/g' *.csv` — replace in-place
+` sed '/^$/ d' input.txt` — delete
+
+`echo "10.123.01-RELEASE" | cut -d '.' -f 1` — extract by delimiter
+`echo "very long string here" | cut -c 5-15` — extract text by characters
+
+=== awk
+` ps aux |  awk '$3>5 { print $3, $11}'` — extract tab-delimited values(cpu>5%)
+`awk -F ',' '$2=="Foo" && $4>99'  employee.csv` - extract from CSV
+TODO: do I need bat?
+`bat text-file` - Opens with syntax highlighting
+
+awkan
+=== Git
+git tag -l
+
+`git tag --sort=creatordate | tail -n 5` Get the last tag
+
+
