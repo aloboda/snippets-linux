@@ -33,10 +33,12 @@
 TODO: do I need bat?
 `bat text-file` - Opens with syntax highlighting
 
-awkan
 === Git
 git tag -l
 
 `git tag --sort=creatordate | tail -n 5` Get the last tag
 
+
+=== SSH
+`ssh-keygen -t rsa -b 4096 -C "comment"` — create RSA key
 
